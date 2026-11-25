@@ -1,0 +1,17 @@
+{
+  "name": "crawley-accountants-fullstack",
+  "version": "2.0.0",
+  "description": "Crawley Accountants Ltd - Redesigned React.js + Node.js + MySQL Website & Admin Panel",
+  "main": "server/app.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "init-db": "node server/scripts/initDb.js",
+    "build": "cd client && npm run build",
+    "start": "node server/app.js",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev"
+  }
+}
